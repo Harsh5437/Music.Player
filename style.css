@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+/* Hero container */
+.player-container {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 25px;
+  padding: 35px 30px;
+  text-align: center;
+  width: 380px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+  color: #fff;
+  animation: fadeIn 1.2s ease;
+}
+
+/* Title */
+h1 {
+  font-size: 26px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #fdfdfd;
+  text-shadow: 0 2px 5px rgba(0,0,0,0.4);
+}
+
+/* Album Art */
+.album-cover {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 20px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+  border: 3px solid rgba(255,255,255,0.3);
+}
+
+.album-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Song Info */
+.song-info h2 {
+  margin: 10px 0 5px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.song-info p {
+  margin: 0;
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+/* Controls */
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.controls button {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  font-size: 24px;
+  margin: 0 12px;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 14px 18px;
+  color: #fff;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+  transition: transform 0.2s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.controls button:hover {
+  transform: scale(1.15);
+  background: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+/* Progress Bar */
+.progress-container {
+  background: rgba(255, 255, 255, 0.2);
+  width: 100%;
+  height: 10px;
+  border-radius: 10px;
+  margin: 15px 0;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.progress {
+  background: linear-gradient(90deg, #ff6a00, #ee0979);
+  height: 100%;
+  width: 0%;
+  border-radius: 10px;
+  transition: width 0.2s ease;
+}
+
+/* Time */
+.time {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  margin-top: 5px;
+  opacity: 0.9;
+}
+
+/* Volume */
+.volume-control {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.volume-control label {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.volume-control input {
+  width: 130px;
+  accent-color: #ff6a00;
+  cursor: pointer;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
