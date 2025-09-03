@@ -29,9 +29,13 @@ JavaScript – DOM manipulation, audio control, and API integration.
 iTunes Search API – Provides dynamic music previews.
 
 📂 Project Structure
+
 music-player/
+
 │── index.html        # Main HTML file
+
 │── style.css         # CSS styling
+
 │── script.js         # JavaScript functionality & API calls
 
 ⚙️ Setup & Usage
